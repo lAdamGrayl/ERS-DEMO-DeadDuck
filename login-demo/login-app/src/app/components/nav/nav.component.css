@@ -1,0 +1,171 @@
+
+
+
+
+
+nav{
+  width: 600px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: lightblue;
+  border: 2px solid black;
+  border-radius: 25px;
+
+}
+
+
+.col-form-label{
+  text-align: center;
+  color:black;
+  max-width:  50%;
+  margin: auto;
+}
+
+.form-group{
+  text-align: center;
+  color:black;
+  max-width:  50%;
+  margin: auto;
+}
+.a{
+  text-align: center;
+  color:black;
+  max-width:  50%;
+  margin: auto;
+}
+a{
+  text-align: center;
+  color:black;
+  max-width:  50%;
+  margin: auto;
+}
+
+/* .button{
+ text-align: center;
+    color:black;
+    max-width:  500;
+   margin: auto;
+} */
+
+button{
+  text-align: center;
+  color: black;
+  max-width:  50%;
+  margin: 0 auto;
+  display: flex;
+}
+
+
+.jumbotron {
+  margin:4px;
+  font-size: 21px;
+  font-weight: 200;
+  line-height: 2.1428571435;
+  background-color: lightblue;
+  border-radius: 25px;
+
+}
+
+.modal.fade.in{
+  overflow:auto;
+  padding-right:0px !important;
+
+}
+.modal-open{overflow:auto;
+  padding-right:0px !important;
+}
+
+.router-outlet{
+  text-align: center;
+  color:black;
+  max-width:  50%;
+  margin: auto;
+
+}
+
+router-outlet{
+  text-align: center;
+  color:black;
+  max-width:  50%;
+  margin: auto;
+
+}
+
+li {
+  text-align: center;
+  color:black;
+  max-width:  50%;
+  margin: auto;
+
+}
+
+
+ul {
+  text-align: center;
+  color:black;
+  max-width:  50%;
+  margin: auto;
+
+}
+
+
+h1 {
+  text-align: center;
+  color:black;
+  max-width:  50%;
+  margin: auto;
+
+}
+
+h2{
+  text-align: center;
+  color:black;
+  max-width:  50%;
+  margin: auto;
+}
+h3{
+  text-align: center;
+  color:black;
+  max-width:  50%;
+  margin: auto;
+
+}
+.container{
+  text-align: center;
+  color:black;
+  max-width:  50%;
+  margin: auto;
+
+
+}
+
+router-outlet{
+  width: 600px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: lightblue;
+  border: 2px solid black;
+  border-radius: 25px;
+
+
+}
+
+body {
+  width: 600px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: lightblue;
+  border: 2px solid black;
+  border-radius: 25px;
+
+
+
+
+}
+
+p {
+  border: 1px solid black;
+}

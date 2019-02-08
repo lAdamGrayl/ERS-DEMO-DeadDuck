@@ -1,0 +1,33 @@
+
+<nav>
+  <br>
+
+  <h1> You are now logged into the  <h1 id="roles"></h1> portal.</h1>
+    <br><br>
+  <h1> Welcome back <h1 id="firstname"> ! </h1> </h1>
+    <br><br><br>
+
+  <!--<button type="button" (click)="getUser()">Get user Name</button>-->
+  <!--&lt;!&ndash;<ul>&ndash;&gt;-->
+    <!--&lt;!&ndash;<li *ngFor="let item of navItems"><a ="">{{item.title}}</a>&ndash;&gt;-->
+    <!--&lt;!&ndash;</li>&ndash;&gt;-->
+  <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+  <!--<p id="role"></p>-->
+    <ul>
+      <li *ngFor="let item of navItems"><a [routerLink]="['/', item.link]">{{item.title}}</a>
+      </li>
+    </ul>
+<br><br>
+  <br>
+  <button type="submit" (click)="Logout()">Logout</button>
+  <br>
+  <button class="submit" (click)="refresh()">Reload</button>
+  <br>
+</nav>
+
+
+
+
+
+
+

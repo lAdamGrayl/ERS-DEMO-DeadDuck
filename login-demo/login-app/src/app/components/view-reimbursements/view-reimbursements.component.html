@@ -1,0 +1,37 @@
+
+<body>
+<h1>Your Reimbursement Details</h1>
+<br>
+<br>
+<nav>
+  <table style="width:50%">
+  <tr>
+    <th id="id"> Reimbursement ID</th>
+    <th id="type">Type</th>
+    <th id="amount">Amount</th>
+    <th id="description">Description</th>
+    <th id="dateSubmitted">Submit Date</th>
+    <th id="status">Status</th>
+  </tr>
+  <tr *ngFor="let reimbursement of reimbursements">
+    <!--<td headers="type">{{reimbursement.typeId}}</td>-->
+    <td headers="id">{{reimbursement.id}}</td>
+    <td *ngIf="reimbursement.typeId === 1">{{type1}}</td>
+    <td *ngIf="reimbursement.typeId === 2">{{type2}}</td>
+    <td *ngIf="reimbursement.typeId === 3">{{type3}}</td>
+    <td *ngIf="reimbursement.typeId === 4">{{type4}}</td>
+    <td headers="amount">${{reimbursement.amount}}</td>
+    <td headers="description">{{reimbursement.description}}</td>
+    <td headers="dateSubmitted">{{reimbursement.dateSubmitted | date}}</td>
+    <td *ngIf="reimbursement.statusId === 1">{{status1}}</td>
+    <td *ngIf="reimbursement.statusId === 2">{{status2}}</td>
+    <td *ngIf="reimbursement.statusId === 3">{{status3}}</td>
+  </tr>
+</table>
+<br>
+<button class="submit" (click)="refresh()">Go Home.</button>
+<br>
+
+</nav>
+</body>
+

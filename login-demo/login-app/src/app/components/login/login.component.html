@@ -1,0 +1,35 @@
+<div class="form-container">
+  <br>
+  <h1> Employee Reimbursement System.</h1>
+  <br>
+  <br>
+  <h3>By</h3><br>
+  <h3> Eric Webb and Adam Gray.</h3>
+  <form #loginForm="ngForm" novalidate (ngSubmit)="loginSubmit()">
+    <br>
+<br>
+    <div>
+      <input 
+      type="text"
+      name="username" 
+      placeholder="email"
+      [(ngModel)]="username"
+      required/>
+    </div>  <br>
+
+    <div>
+      <input 
+        type="password"
+        name="password"
+        placeholder="password"
+        [(ngModel)]="password"
+        required/>
+    </div>  <br>
+
+    <div>
+      <button type="submit" [disabled]="!loginForm.valid">Login</button>
+    </div>  <br>
+
+  </form>  <br>
+
+</div>

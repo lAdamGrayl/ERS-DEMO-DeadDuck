@@ -1,0 +1,53 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+	      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+  <servlet>
+    <servlet-name>AuthServlet</servlet-name>
+    <servlet-class>com.spark.ex.web.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AuthServlet</servlet-name>
+    <url-pattern>/auth/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ReimbursementsByAuthorServlet</servlet-name>
+    <servlet-class>com.spark.ex.web.ReimbursementsByAuthorServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReimbursementsByAuthorServlet</servlet-name>
+    <url-pattern>/reimbursementsbyauthor/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ReimbursementServlet</servlet-name>
+    <servlet-class>com.spark.ex.web.ReimbursementServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReimbursementServlet</servlet-name>
+    <url-pattern>/reimbursements/*</url-pattern>
+  </servlet-mapping>
+  <listener>
+    <listener-class>com.spark.ex.web.ContextListener</listener-class>
+  </listener>
+
+
+
+
+  <context-param>
+    <param-name>dbUrl</param-name>
+    <param-value>jdbc:postgresql://sparknov27.cozwclc006qn.us-east-2.rds.amazonaws.com:5432/inclass</param-value>
+  </context-param>
+  <context-param>
+    <param-name>dbUsername</param-name>
+    <param-value>adamgray13</param-value>
+  </context-param>
+  <context-param>
+    <param-name>dbPassword</param-name>
+    <param-value>F0rsaken!</param-value>
+  </context-param>
+  <context-param>
+    <param-name>dbDriver</param-name>
+    <param-value>org.postgresql.Driver</param-value>
+  </context-param>
+</web-app>
